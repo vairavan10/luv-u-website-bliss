@@ -1,10 +1,12 @@
+// vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/", // ✅ Netlify needs root base
+  // ❌ REMOVE base if you're using Netlify
+  // ✅ Only add base if you're using GitHub Pages
 
   server: {
     host: "::",
@@ -21,4 +23,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));  
+}));
