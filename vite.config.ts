@@ -5,8 +5,6 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // ❌ REMOVE base if you're using Netlify
-  // ✅ Only add base if you're using GitHub Pages
 
   server: {
     host: "::",
