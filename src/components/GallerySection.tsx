@@ -8,27 +8,27 @@ const GallerySection = () => {
   // Using placeholder images with descriptions for the gallery
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=500&h=400&fit=crop&crop=center",
+      src: "src/image/gallary1.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Happy child enjoying a gentle facial treatment",
       caption: "Gentle skincare moments"
     },
     {
-      src: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=500&h=400&fit=crop&crop=center", 
+      src: "src/image/gallary2.jpg?w=500&h=400&fit=crop&crop=center", 
       alt: "Adorable kitten representing our gentle approach",
       caption: "As gentle as our furry friends"
     },
     {
-      src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=500&h=400&fit=crop&crop=center",
+      src: "src/image/gallary3.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Cozy spa environment",
       caption: "Our warm, welcoming space"
     },
     {
-      src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=500&h=400&fit=crop&crop=center",
+      src: "src/image/gallary4.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Comfortable spa interior",
       caption: "Designed for little comfort"
     },
     {
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&h=400&fit=crop&crop=center",
+      src: "src/image/gallary5.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Peaceful nature scene representing tranquility",
       caption: "Creating peaceful moments"
     }

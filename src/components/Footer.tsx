@@ -55,19 +55,22 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="text-lavender-300 mt-1" size={20} />
                 <div>
-                  <p>123 Magic Lane</p>
-                  <p>Wonder City, WC 12345</p>
+                  <p>#26, Philomina Nagar,</p>
+                  <p>Near Don Bosco School,
+Yagappa Nagar Main Road,</p>
+                  <p>Thanjavur - 613 006.
+Tamilnadu - India.</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="text-lavender-300" size={20} />
-                <p>(555) 123-KIDS</p>
+                <p>9487992728</p>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="text-lavender-300" size={20} />
-                <p>hello@luvukidsworld.com</p>
+                <p>luvuwomenworld@gmail.com</p>
               </div>
             </div>
 
@@ -75,26 +78,42 @@ const Footer = () => {
             <div className="mt-6">
               <h5 className="font-semibold mb-3">Hours</h5>
               <div className="text-sm text-lavender-100 space-y-1">
-                <p>Monday - Saturday: 9AM - 6PM</p>
-                <p>Sunday: 10AM - 4PM</p>
+                <p>Monday - Saturday: 9AM - 9PM</p>
+                
               </div>
             </div>
           </div>
         </div>
 
         {/* Map Section */}
-        <div className="mt-12 pt-8 border-t border-lavender-700">
-          <div className="bg-white/10 rounded-2xl p-6 text-center">
-            <h4 className="text-lg font-semibold mb-4">Find Our Magical Space</h4>
-            <div className="bg-white/20 rounded-xl h-48 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="mx-auto mb-2 text-lavender-200" size={32} />
-                <p className="text-lavender-100">Interactive map would be embedded here</p>
-                <p className="text-sm text-lavender-200 mt-2">Click for directions to our spa</p>
-              </div>
-            </div>
-          </div>
-        </div>
+<div className="mt-12 pt-8 border-t border-lavender-700">
+  <div className="bg-white/10 rounded-2xl p-6 text-center">
+    <h4 className="text-lg font-semibold mb-4">Find Our Magical Space</h4>
+
+    <div className="rounded-xl overflow-hidden w-full h-[300px]">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.642409318063!2d79.13301201086597!3d10.762018159414547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab8ea352cc6ef%3A0xc44caff0167f4e72!2sLUV%20U%20The%20Women%20World!5e0!3m2!1sen!2sin!4v1750955929219!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+      allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <a
+      href="https://maps.app.goo.gl/EP3dRYBFFDT76G8H9"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block mt-4 text-center text-lavender-200 underline hover:text-lavender-100"
+    >
+      Open in Google Maps
+    </a>
+  </div>
+</div>
+
+
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-lavender-700">

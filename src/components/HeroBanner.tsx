@@ -43,14 +43,14 @@ const HeroBanner = () => {
             Where Tiny Smiles
             <br />
             <span className="inline-flex items-center gap-3">
-              Shine Bright!
+              Shine Cute!
               <Heart className="text-peach-400 animate-pulse" size={48} />
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-            A magical spa experience designed especially for little ones, where comfort meets joy in every gentle treatment.
+            The Kids World, we believe every child deserves to feel special. Our magical spa and makeover experiences are specially crafted for little ones, blending fun, safety, and creativity in every service
           </p>
 
           {/* Call-to-Action Buttons */}

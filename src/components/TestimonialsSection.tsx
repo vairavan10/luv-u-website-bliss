@@ -8,38 +8,38 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Mother of Emma, 6",
+      name: "Tamil Selvi",
+      role: "Mother of kavitha, 6",
       rating: 5,
-      text: "Emma absolutely loves coming to LUV U! The staff is so gentle and caring, and Emma always leaves with the biggest smile. It's become our special mother-daughter bonding time.",
+      text: "ennaku LUV U kku varathu romba pidikkum! Inga staff romba gentle-aum caring-aavum irukkanga, and enna epovume periya smile-oda than Welcome pannuvanga. Idhu enga rendu perukkum oru special-aana bonding set aayiduchu.",
       highlight: "The staff is so gentle and caring"
     },
     {
-      name: "Maria Rodriguez",
-      role: "Mother of Sofia, 4",
+      name: "Ragavi",
+      role: "Mother of preethi, 8",
       rating: 5,
-      text: "I was nervous about taking Sofia to a spa, but the team made both of us feel so comfortable. They explained everything to Sofia in the sweetest way, and she felt like a real princess!",
+      text: "I was nervous about taking my kid to a spa, but the staff made both of us feel so comfortable. They explained everything to my kid in the sweetest way, and she felt like a real princess!",
       highlight: "She felt like a real princess"
     },
     {
-      name: "Jennifer Lee",
-      role: "Mother of twins Lucas & Lily, 7",
+      name: "Gowri",
+      role: "Mother of keerthy, 7",
       rating: 5,
-      text: "We booked the birthday party package for the twins, and it was absolutely magical! All the children had such a wonderful time, and the photos are precious memories we'll treasure forever.",
-      highlight: "Absolutely magical birthday experience"
+      text: "We booked the birthday Make Up package for my girl, and it was absolutely magical! She Loved the way they care, and the photos are precious memories we'll treasure forever.",
+      highlight: "Absolutely magical makeup"
     },
     {
-      name: "Amanda Thompson",
-      role: "Mother of Grace, 5",
+      name: "Subu lakshmi",
+      role: "Mother of durga, 5",
       rating: 5,
-      text: "Grace has been going to LUV U for over a year now, and every visit is special. The natural products they use are perfect for her sensitive skin, and she always feels so pampered and loved.",
+      text: "The natural products they use are perfect for her sensitive skin, and she always feels so pampered and loved.",
       highlight: "Perfect for sensitive skin"
     },
     {
-      name: "Nicole Davis",
-      role: "Mother of Chloe, 8",
+      name: "Meenakshi",
+      role: "Mother of Sindu, 8",
       rating: 5,
-      text: "As a working mom, I love that I can give Chloe this special experience. The atmosphere is so calming and beautiful, and Chloe always talks about her 'spa day' for weeks afterward!",
+      text: "As a working mom, I love that I can give sindu this special experience. The atmosphere is so calming and beautiful, and sindu always talks about her 'spa day' for weeks afterward!",
       highlight: "Talks about her spa day for weeks"
     }
   ];
@@ -151,15 +151,15 @@ const TestimonialsSection = () => {
           {/* Trust Indicators */}
           <div className="mt-16 grid md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-lavender-600">500+</div>
+              <div className="text-3xl font-bold text-lavender-600">100+</div>
               <p className="text-gray-600 text-sm">Happy Little Guests</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-mint-600">98%</div>
+              <div className="text-3xl font-bold text-mint-600">100%</div>
               <p className="text-gray-600 text-sm">Parent Satisfaction</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-peach-600">2+</div>
+              <div className="text-3xl font-bold text-peach-600">8+</div>
               <p className="text-gray-600 text-sm">Years of Magic</p>
             </div>
             <div className="space-y-2">

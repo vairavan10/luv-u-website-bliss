@@ -26,7 +26,7 @@ const AboutSection = () => {
                   Founded by loving parents who understood the need for a safe, nurturing space where children could experience the joy of self-care, LUV U was born from a simple belief: every little one deserves to feel like royalty.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We've created a magical environment where giggles echo through softly lit rooms, where every treatment is as gentle as a parent's touch, and where memories are made that will last a lifetime.
+                 At the heart of it all is <b>Ramayee M</b>, a passionate and caring soul who treats every child not just as a guest, but as one of her own. With her gentle approach, warm smile, and motherly care, she ensures that each visit feels like a magical hug — full of love, laughter, and trust.
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const AboutSection = () => {
                   <Star className="text-white" size={32} />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">Magical Experience</h4>
-                <p className="text-sm text-gray-600">Creating unforgettable memories in our enchanted space</p>
+                <p className="text-sm text-gray-600">Creating unforgettable memories in our enchanted space, where pampering meets play</p>
               </div>
             </div>
           </div>

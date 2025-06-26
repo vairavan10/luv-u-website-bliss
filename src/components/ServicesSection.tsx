@@ -8,48 +8,36 @@ const ServicesSection = () => {
       icon: Sparkles,
       title: "Mini Gentle Facials",
       description: "Soft, natural cleansing treatments that make little faces glow with happiness and health.",
-      price: "Starting at $25",
-      duration: "20 mins",
       color: "from-lavender-400 to-lavender-500"
     },
     {
       icon: Scissors,
       title: "Fun Hair Styling",
       description: "Magical hair styling sessions with fun accessories, braids, and gentle styling for special occasions.",
-      price: "Starting at $35",
-      duration: "30 mins",
       color: "from-mint-400 to-mint-500"
     },
     {
       icon: Palette,
       title: "Nail Art Magic",
       description: "Safe, non-toxic nail art with adorable designs that let little personalities shine through.",
-      price: "Starting at $20",
-      duration: "25 mins",
       color: "from-peach-400 to-peach-500"
     },
     {
       icon: Crown,
       title: "Princess/Prince Makeover",
       description: "Complete royal treatment including gentle styling, nail art, and a special photo session.",
-      price: "Starting at $75",
-      duration: "60 mins",
       color: "from-skyblue-400 to-skyblue-500"
     },
     {
       icon: Camera,
       title: "Memory Photo Session",
       description: "Professional photos to capture the magical moments and glowing smiles from their spa day.",
-      price: "Starting at $45",
-      duration: "20 mins",
       color: "from-lavender-500 to-mint-500"
     },
     {
       icon: Gift,
       title: "Birthday Party Packages",
       description: "Special celebration packages for the ultimate birthday spa party experience with friends.",
-      price: "Starting at $199",
-      duration: "2 hours",
       color: "from-peach-500 to-skyblue-500"
     }
   ];
@@ -82,11 +70,6 @@ const ServicesSection = () => {
                         <IconComponent className="text-white" size={32} />
                       </div>
                       <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-                      <div className="flex justify-center space-x-4 text-white/90 text-sm">
-                        <span>{service.price}</span>
-                        <span>•</span>
-                        <span>{service.duration}</span>
-                      </div>
                     </div>
 
                     {/* Service Details */}

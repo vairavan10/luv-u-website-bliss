@@ -42,28 +42,56 @@ const BookingSection = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Booking submitted:', formData);
-    
-    toast({
-      title: "Booking Request Sent! 🌟",
-      description: "Thank you! We'll contact you within 24 hours to confirm your little one's magical spa day.",
-    });
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  console.log('Booking submitted:', formData);
 
-    // Reset form
-    setFormData({
-      parentName: '',
-      childName: '',
-      childAge: '',
-      email: '',
-      phone: '',
-      service: '',
-      preferredDate: '',
-      preferredTime: '',
-      specialRequests: ''
-    });
-  };
+  toast({
+    title: "Booking Request Sent! 🌟",
+    description: "WhatsApp is opening — please send the message to confirm booking.",
+  });
+
+  // Compose WhatsApp message
+  const message = `🌸 *New Booking Request* 🌸
+
+👩 Parent/Guardian: ${formData.parentName}
+👧 Child: ${formData.childName} (Age: ${formData.childAge})
+
+📧 Email: ${formData.email}
+📞 Phone: ${formData.phone}
+
+💅 Preferred Service: ${formData.service}
+📅 Date: ${formData.preferredDate}
+⏰ Time: ${formData.preferredTime}
+
+📝 Special Notes: ${formData.specialRequests || "None"}
+
+— Sent from the *LUV U* booking form 💖`;
+
+  // Your WhatsApp number (no + or spaces)
+  const whatsappNumber = '917358888428';
+
+  // WhatsApp URL
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  // Open WhatsApp with the message
+  window.open(whatsappURL, '_blank');
+
+  // Reset the form
+  setFormData({
+    parentName: '',
+    childName: '',
+    childAge: '',
+    email: '',
+    phone: '',
+    service: '',
+    preferredDate: '',
+    preferredTime: '',
+    specialRequests: ''
+  });
+};
+
+
 
   return (
     <section id="booking" className="py-20 bg-gradient-to-br from-lavender-50 via-white to-mint-50">
@@ -82,7 +110,7 @@ const BookingSection = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Contact Information */}
-            <div className="lg:col-span-1 space-y-6">
+            <div className="space-y-6 w-[90%] max-w-md mx-auto lg:w-[420px]">
               <Card className="border-0 shadow-lg bg-gradient-to-br from-lavender-100 to-mint-100">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
@@ -93,17 +121,17 @@ const BookingSection = () => {
                         <Phone className="text-white" size={20} />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-800">(555) 123-KIDS</p>
+                        <p className="font-medium text-gray-800">+91 - 73588 88428</p>
                         <p className="text-sm text-gray-600">Call us anytime</p>
                       </div>
                     </div>
                     
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-mint-500 rounded-full flex items-center justify-center">
-                        <Mail className="text-white" size={20} />
+                    <div className="flex items-center space-x-2">
+                      <div className="w-20 h-10 bg-mint-900 rounded-full flex items-center justify-center">
+                        <Mail className="text-white" size={30} />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-800">hello@luvukidsworld.com</p>
+                        <p className="font-small text-gray-800">luvuwomenworl@gmail.com</p>
                         <p className="text-sm text-gray-600">Email us your questions</p>
                       </div>
                     </div>
@@ -122,7 +150,7 @@ const BookingSection = () => {
               </Card>
 
               <Card className="border-0 shadow-lg">
-                <CardContent className="p-6">
+                <CardContent className="p-10">
                   <h3 className="text-lg font-semibold text-gray-800 mb-4">What to Expect</h3>
                   <div className="space-y-3 text-sm text-gray-600">
                     <div className="flex items-start space-x-3">
@@ -147,8 +175,8 @@ const BookingSection = () => {
             </div>
 
             {/* Booking Form */}
-            <div className="lg:col-span-2">
-              <Card className="border-0 shadow-lg">
+            <div className="lg:col-span-4">
+              <Card className="border-0 shadow-lg bg-blue">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Parent & Child Information */}
@@ -157,15 +185,16 @@ const BookingSection = () => {
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Parent/Guardian Name *
                         </label>
-                        <Input
-                          type="text"
-                          name="parentName"
-                          value={formData.parentName}
-                          onChange={handleInputChange}
-                          required
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
-                          placeholder="Your name"
-                        />
+                       <Input
+  type="text"
+  name="parentName"
+  value={formData.parentName}
+  onChange={handleInputChange}
+  required
+  className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+  placeholder="Your name"
+/>
+
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -177,7 +206,7 @@ const BookingSection = () => {
                           value={formData.childName}
                           onChange={handleInputChange}
                           required
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                          className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                           placeholder="Your little one's name"
                         />
                       </div>
@@ -197,7 +226,7 @@ const BookingSection = () => {
                           required
                           min="2"
                           max="12"
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                         className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                           placeholder="Age"
                         />
                       </div>
@@ -211,7 +240,7 @@ const BookingSection = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                          className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                           placeholder="your@email.com"
                         />
                       </div>
@@ -225,7 +254,7 @@ const BookingSection = () => {
                           value={formData.phone}
                           onChange={handleInputChange}
                           required
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                          className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                           placeholder="(555) 123-4567"
                         />
                       </div>
@@ -265,7 +294,7 @@ const BookingSection = () => {
                           onChange={handleInputChange}
                           required
                           min={new Date().toISOString().split('T')[0]}
-                          className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                         className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                         />
                       </div>
                       <div>
@@ -299,7 +328,7 @@ const BookingSection = () => {
                         value={formData.specialRequests}
                         onChange={handleInputChange}
                         rows={4}
-                        className="rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
+                        className="bg-pink-100 rounded-xl border-gray-200 focus:border-lavender-400 focus:ring-lavender-400"
                         placeholder="Any allergies, preferences, or special occasions we should know about?"
                       />
                     </div>
