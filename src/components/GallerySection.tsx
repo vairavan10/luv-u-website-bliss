@@ -8,27 +8,27 @@ const GallerySection = () => {
   // Using placeholder images with descriptions for the gallery
   const galleryImages = [
     {
-      src: "src/image/gallary1.jpg?w=500&h=400&fit=crop&crop=center",
+      src: "/gallary1.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Happy child enjoying a gentle facial treatment",
       caption: "Gentle skincare moments"
     },
     {
-      src: "src/image/gallary2.jpg?w=500&h=400&fit=crop&crop=center", 
+      src: "/gallary2.jpg?w=500&h=400&fit=crop&crop=center", 
       alt: "Adorable kitten representing our gentle approach",
       caption: "As gentle as our furry friends"
     },
     {
-      src: "src/image/gallary3.jpg?w=500&h=400&fit=crop&crop=center",
+      src: "/gallary3.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Cozy spa environment",
       caption: "Our warm, welcoming space"
     },
     {
-      src: "src/image/gallary4.jpg?w=500&h=400&fit=crop&crop=center",
+      src: "/gallary4.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Comfortable spa interior",
       caption: "Designed for little comfort"
     },
     {
-      src: "src/image/gallary5.jpg?w=500&h=400&fit=crop&crop=center",
+      src: "/gallary5.jpg?w=500&h=400&fit=crop&crop=center",
       alt: "Peaceful nature scene representing tranquility",
       caption: "Creating peaceful moments"
     }

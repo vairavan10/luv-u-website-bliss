@@ -23,7 +23,7 @@ const Navigation = () => {
           {/* Logo */}
 <div className="w-32 h-auto">
   <img
-    src="src/image/logo.png" // Make sure this path is correct
+    src="/logo.png" // Make sure this path is correct
     alt="LUV U Logo"
     className="w-full h-auto object-contain"
   />
