@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 
 const HeroBanner = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section
+  id="home"
+className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32 md:pt-40"
+>
       {/* Floating Bubbles */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(6)].map((_, i) => (
@@ -49,26 +52,73 @@ const HeroBanner = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-            The Kids World, we believe every child deserves to feel special. Our magical spa and makeover experiences are specially crafted for little ones, blending fun, safety, and creativity in every service
-          </p>
+            {/* <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto text-center">
+              <span className="whitespace-nowrap">🌸 <strong>LUV U Kids Spa</strong> – Thanjavur's First-Ever Spa for Cute Babies! 🌸</span><br />
+              <br />
+              Every little smile matters to us. From gentle makeovers to joyful pampering, we craft magical, safe, and unforgettable experiences just for your little stars. ✨<br />
+              <br />
+              <span className="text-pink-600 font-semibold">
+                தஞ்சாவூரில் முதல் முறையாக<br />
+                சிறிய பிள்ளைகளுக்கான ஸ்பா அனுபவம் – உங்கள் குட்டி தேவதைக்கு மட்டுமே!
+              </span><br />
+              <br />
+              Because at <strong>The Kids World</strong>, we truly believe:<br />
+              <span className="text-rose-500 italic">
+                "அனைத்து குழந்தைகளும் அன்பும் கவனமும் பெறவேண்டும்!"
+              </span>
+            </p> */}
+{/* Full-Width Hero Image */}
+<div className="w-full h-72 md:h-[500px] mt-10">
+  <img
+    src="gallary3.jpg"
+    alt="Cute baby spa"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+{/* Subtitle Section */}
+<div className="text-center px-4 max-w-5xl mx-auto mt-6 text-gray-700">
+  <p className="text-xl md:text-2xl leading-relaxed">
+    <span className="whitespace-nowrap">
+      🌸 <strong>LUV U Kids Spa</strong> – Thanjavur's First-Ever Spa for Cute Babies! 🌸
+    </span>
+    <br /><br />
+    Every little smile matters to us. From gentle makeovers to joyful pampering, we craft magical, safe, and unforgettable experiences just for your little stars. ✨
+    <br /><br />
+    <span className="text-pink-600 font-semibold">
+      தஞ்சாவூரில் முதல் முறையாக<br />
+      சிறிய பிள்ளைகளுக்கான ஸ்பா அனுபவம் – உங்கள் குட்டி தேவதைக்கு மட்டுமே!
+    </span>
+    <br /><br />
+    Because at <strong>The Kids World</strong>, we truly believe:
+    <br />
+    <span className="text-rose-500 italic">
+      "அனைத்து குழந்தைகளும் அன்பும் கவனமும் பெறவேண்டும்!"
+    </span>
+  </p>
+</div>
+
+
+
+
 
           {/* Call-to-Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-lavender-500 to-mint-500 hover:from-lavender-600 hover:to-mint-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover-lift"
-            >
-              Book Your Little One's Visit
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-peach-300 text-peach-600 hover:bg-peach-50 px-8 py-4 text-lg rounded-full hover-lift"
-            >
-              Explore Our Services
-            </Button>
-          </div>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-10">
+  <Button
+    size="lg"
+    className="bg-gradient-to-r from-lavender-500 to-mint-500 hover:from-lavender-600 hover:to-mint-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover-lift"
+  >
+    Book Your Little One's Visit
+  </Button>
+  <Button
+    variant="outline"
+    size="lg"
+    className="border-2 border-peach-300 text-peach-600 hover:bg-peach-50 px-8 py-4 text-lg rounded-full hover-lift"
+  >
+    Explore Our Services
+  </Button>
+</div>
+
 
           {/* Trust Indicators */}
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500">

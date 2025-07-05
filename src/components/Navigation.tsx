@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -15,21 +14,17 @@ const Navigation = () => {
   ];
 
   return (
-<nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(30,30,30,0.4)] backdrop-blur-md shadow-md">
-
-
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(255, 0, 0, 0.4)] backdrop-blur-md shadow-md">
+      <div className="container mx-auto px-25 py-4">
+        <div className="flex items-center justify-between relative">
           {/* Logo */}
-<div className="w-32 h-auto">
-  <img
-    src="/logo.png" // Make sure this path is correct
-    alt="LUV U Logo"
-    className="w-full h-auto object-contain"
-  />
-</div>
-
-
+          <div className="w-32 h-auto">
+            <img
+              src="/logo.png" // Make sure this path is correct
+              alt="LUV U Logo"
+              className="w-full h-auto object-contain"
+            />
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
